@@ -22,6 +22,13 @@ async def reset(req: Request):
     return templates.TemplateResponse('css/02reset.html', {'request': req})
 
 @css_router.get('/text')
-async def reset(req: Request):
+async def text(req: Request):
     return templates.TemplateResponse('css/03text.html', {'request': req})
 
+@css_router.get('/box')
+async def box(req: Request):
+    return templates.TemplateResponse('css/04box.html', {'request': req})
+
+@css_router.get('/list')
+async def list(req: Request):
+    return templates.TemplateResponse('css/05list.html', {'request': req})
