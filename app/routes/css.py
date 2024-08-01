@@ -45,7 +45,13 @@ async def position(req: Request):
 async def table(req: Request):
     return templates.TemplateResponse('css/08table.html', {'request': req})
 
+@css_router.get('/float')
+async def float(req: Request):
+    return templates.TemplateResponse('css/09float.html', {'request': req})
 
+@css_router.get('/flex')
+async def flex(req: Request):
+    return templates.TemplateResponse('css/10flex.html', {'request': req})
 
 
 
