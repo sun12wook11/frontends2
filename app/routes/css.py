@@ -57,6 +57,9 @@ async def flex(req: Request):
 async def flex(req: Request):
     return templates.TemplateResponse('css/11markdown.html', {'request': req})
 
+@css_router.get('/bootstrap')
+async def flex(req: Request):
+    return templates.TemplateResponse('css/12bootstrap.html', {'request': req})
 
 
 
