@@ -20,7 +20,9 @@ async def flex(req: Request):
 async def flex(req: Request):
     return templates.TemplateResponse('js/02type.html', {'request': req})
 
-
+@jscript_router.get('/operator')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/03operator.html', {'request': req})
 
 
 
