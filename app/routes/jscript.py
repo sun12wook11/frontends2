@@ -24,7 +24,9 @@ async def flex(req: Request):
 async def flex(req: Request):
     return templates.TemplateResponse('js/03operator.html', {'request': req})
 
-
+@jscript_router.get('/condition')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/04condition.html', {'request': req})
 
 
 
