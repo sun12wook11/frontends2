@@ -36,3 +36,6 @@ async def flex(req: Request):
 async def flex(req: Request):
     return templates.TemplateResponse('js/06array.html', {'request': req})
 
+@jscript_router.get('/while')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/07while.html', {'request': req})
