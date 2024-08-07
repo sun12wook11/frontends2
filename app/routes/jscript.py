@@ -32,3 +32,7 @@ async def flex(req: Request):
 async def flex(req: Request):
     return templates.TemplateResponse('js/05loop.html', {'request': req})
 
+@jscript_router.get('/array')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/06array.html', {'request': req})
+
