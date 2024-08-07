@@ -39,3 +39,7 @@ async def flex(req: Request):
 @jscript_router.get('/while')
 async def flex(req: Request):
     return templates.TemplateResponse('js/07while.html', {'request': req})
+
+@jscript_router.get('/function')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/08function.html', {'request': req})
