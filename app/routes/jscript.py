@@ -47,3 +47,15 @@ async def flex(req: Request):
 @jscript_router.get('/callback')
 async def flex(req: Request):
     return templates.TemplateResponse('js/09callback.html', {'request': req})
+
+@jscript_router.get('/except')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/10except.html', {'request': req})
+
+@jscript_router.get('/bom')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/11bom.html', {'request': req})
+
+@jscript_router.get('/dom')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/12dom.html', {'request': req})
