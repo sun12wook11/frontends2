@@ -43,3 +43,7 @@ async def flex(req: Request):
 @jscript_router.get('/function')
 async def flex(req: Request):
     return templates.TemplateResponse('js/08function.html', {'request': req})
+
+@jscript_router.get('/callback')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/09callback.html', {'request': req})
