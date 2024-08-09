@@ -59,3 +59,15 @@ async def flex(req: Request):
 @jscript_router.get('/dom')
 async def flex(req: Request):
     return templates.TemplateResponse('js/12dom.html', {'request': req})
+
+@jscript_router.get('/event')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/13event.html', {'request': req})
+
+@jscript_router.get('/form')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/14form.html', {'request': req})
+
+@jscript_router.get('/ajax')
+async def flex(req: Request):
+    return templates.TemplateResponse('js/15ajax.html', {'request': req})
